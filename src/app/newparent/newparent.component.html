@@ -1,0 +1,7 @@
+<div class="container-parent">
+    <button class="button-parent" (click)="onClickHandler()">
+      Next employee
+    </button>
+    <h3>Company</h3>
+    <app-newchild [employee]="employee" *ngIf="renderChild()" ></app-newchild>
+  </div>

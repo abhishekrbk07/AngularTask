@@ -1,4 +1,4 @@
-[11-02-2022 18:11] Kaylin Khanal
+
 
 ### Angular tasks
 - [x] Installing Angular dependencies and project setup

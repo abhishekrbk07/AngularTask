@@ -1,0 +1,14 @@
+.container-child {
+    height: 200px;
+    width: 496px;
+    border: 2px solid rgb(6, 69, 105);
+    background: rgb(32, 230, 49);
+    border-radius: 25px;
+  }
+  p{
+      padding-left: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+h3{
+    padding-left: 10px;
+}
