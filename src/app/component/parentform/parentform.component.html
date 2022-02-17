@@ -2,7 +2,13 @@
     <button class="button-parent" (click)="onClickHandler()">
       Next employee
     </button>
-    <button class="button-parent">NEW FORM</button>
+    <button class="button-parent" (click)="onAdd()">ADD EMPLOYEE</button>
     <h3>Company</h3>
-    <app-newchild [employee]="employee" *ngIf="renderChild()" ></app-newchild>
+    <app-childform [employee]="employee" 
+    [renderForm]="renderForm"
+    [renderEmployee]="renderEmployee"
+
+    
+    *ngIf="renderChild()" ></app-childform>
+  
   </div>

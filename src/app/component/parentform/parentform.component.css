@@ -1,6 +1,6 @@
 .container-parent {
     margin-top: 20px;
-    height: 400px;
+    height: 800px;
     width: 500px;
     border: 1px solid rgb(8, 8, 48);
     background:  rgb(24, 112, 153);
@@ -9,10 +9,11 @@
   }
   h3{
       padding-left: 10px;
+      padding-top: 10px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   .button-parent{
       margin-left: 10px;
       border-radius: 25px;
-      margin-top: 10px;
+      margin-top: 20px;
   }

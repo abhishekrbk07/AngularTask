@@ -14,6 +14,8 @@ export class ParentformComponent implements OnInit {
   index=0;
   employee!:Employee
 
+  renderForm!:boolean
+  renderEmployee!:boolean
   constructor(private employeeService:ServiceService) { }
 
   ngOnInit(): void {
@@ -30,6 +32,8 @@ export class ParentformComponent implements OnInit {
   onClickHandler(){
    if (this.index<this.employees.length)
    {
+     this.renderForm=false
+     this.renderEmployee=true
     this.employee=this.employees[this.index]
     this.index++
    }
@@ -45,6 +49,10 @@ export class ParentformComponent implements OnInit {
     else{
       return false;
     }
+  }
+  onAdd(){
+    this.renderForm=true
+    this.renderEmployee=false
   }
 
 }
