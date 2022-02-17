@@ -1,0 +1,18 @@
+.container-parent {
+    margin-top: 20px;
+    height: 400px;
+    width: 500px;
+    border: 1px solid rgb(8, 8, 48);
+    background:  rgb(24, 112, 153);
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  h3{
+      padding-left: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .button-parent{
+      margin-left: 10px;
+      border-radius: 25px;
+      margin-top: 10px;
+  }

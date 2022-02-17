@@ -7,6 +7,13 @@ import { ParentComponent } from './parent/parent.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NewparentComponent } from './newparent/newparent.component';
 import { NewchildComponent } from './newchild/newchild.component';
+import { ParentformComponent } from './component/parentform/parentform.component';
+import { ChildformComponent } from './component/childform/childform.component';
+import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+
+
 
 @NgModule({
   declarations: [
@@ -15,10 +22,11 @@ import { NewchildComponent } from './newchild/newchild.component';
     ParentComponent,
     NewparentComponent,
     NewchildComponent,
-   
+    ParentformComponent,
+    ChildformComponent,
   ],
   imports: [
-    BrowserModule,HttpClientModule
+    BrowserModule,HttpClientModule,FormsModule, NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

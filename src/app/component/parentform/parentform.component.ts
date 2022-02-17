@@ -1,13 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { Employee } from '../interface/employee';
-import {ServiceService } from '../services/service.service';
+import { Employee } from 'src/app/interface/employee';
+import { ServiceService } from 'src/app/services/service.service';
+
 
 @Component({
-  selector: 'app-newparent',
-  templateUrl: './newparent.component.html',
-  styleUrls: ['./newparent.component.css']
+  selector: 'app-parentform',
+  templateUrl: './parentform.component.html',
+  styleUrls: ['./parentform.component.css']
 })
-export class NewparentComponent implements OnInit {
+export class ParentformComponent implements OnInit {
+
   employees!:Employee[]
   index=0;
   employee!:Employee
