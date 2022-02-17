@@ -25,7 +25,10 @@ export class ChildformComponent implements OnInit {
         Validators.required,
         Validators.pattern('^\\s*(?:\\+?(\\d{1,3}))?[-. (]*(\\d{3})[-. )]*(\\d{3})[-. ]*(\\d{4})(?: *x(\\d+))?\\s*$')
       ]),
-    'username' : new FormControl(null, [Validators.required, Validators.minLength(3)])
+    'username' : new FormControl(null, [Validators.required, Validators.minLength(3)]
+    
+
+    )
   });
   }
 
