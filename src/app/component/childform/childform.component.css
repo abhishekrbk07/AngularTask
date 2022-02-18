@@ -1,5 +1,5 @@
 .container-child {
-    height: 600px;
+    height: 250px;
     width: 498px;
     border: 2px solid rgb(6, 69, 105);
     background:whitesmoke;
@@ -12,21 +12,4 @@
 h3{
     padding-left: 10px;
 }
-.container-form{
-    height: 180px;
-    background:white;
-    margin-top: 10px;
-}
 
-.form-control.ng-touched.ng-invalid {
-    border:1px solid red;
-   }
-   .form-control.ng-touched.ng-valid {
-    border:1px solid green;
-   }
-   .pt-5 {
-    padding-top: 1rem!important;
-}
-.shadow {
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-}

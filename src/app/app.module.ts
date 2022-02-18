@@ -12,6 +12,7 @@ import { ChildformComponent } from './component/childform/childform.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -27,7 +28,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ChildformComponent,
   ],
   imports: [
-    BrowserModule,HttpClientModule, NgbModule,ReactiveFormsModule
+    BrowserModule,HttpClientModule, NgbModule,ReactiveFormsModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

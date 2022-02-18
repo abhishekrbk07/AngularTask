@@ -1,6 +1,6 @@
 .container-parent {
     margin-top: 20px;
-    height: 800px;
+    height: 700px;
     width: 500px;
     border: 1px solid rgb(8, 8, 48);
     background:  rgb(24, 112, 153);
@@ -17,3 +17,19 @@
       border-radius: 25px;
       margin-top: 20px;
   }
+ 
+
+.form-control.ng-touched.ng-invalid {
+    border:1px solid red;
+   }
+   
+   .container-child{
+       margin-left: 150px;
+   }
+  .alert{
+      color: red;
+  }
+  .form-control.ng-touched.ng-valid{
+    border: 1px solid green;
+    width: 300px important!;
+}

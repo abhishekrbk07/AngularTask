@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Employee } from 'src/app/interface/employee';
 import { ServiceService } from 'src/app/services/service.service';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 
 @Component({
@@ -14,8 +15,9 @@ export class ParentformComponent implements OnInit {
   index=0;
   employee!:Employee
 
-  renderForm!:boolean
+  renderForm:boolean=false
   renderEmployee!:boolean
+  exform!:FormGroup;
   constructor(private employeeService:ServiceService) { }
 
   ngOnInit(): void {
@@ -30,10 +32,11 @@ export class ParentformComponent implements OnInit {
 
   }
   onClickHandler(){
-   if (this.index<this.employees.length)
+    this.renderEmployee=true
+   if  
+   (this.index<this.employees.length)
    {
-     this.renderForm=false
-     this.renderEmployee=true
+     
     this.employee=this.employees[this.index]
     this.index++
    }
@@ -51,8 +54,14 @@ export class ParentformComponent implements OnInit {
     }
   }
   onAdd(){
+  
     this.renderForm=true
     this.renderEmployee=false
+  }
+  
+  onSubmit(employee: any) {
+    this.renderForm = false;
+    this.employee = employee;
   }
 
 }
