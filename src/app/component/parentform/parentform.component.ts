@@ -62,6 +62,7 @@ export class ParentformComponent implements OnInit {
   onSubmit(employee: any) {
     this.renderForm = false;
     this.employee = employee;
+  
   }
 
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { Employee } from '../../interface/employee';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-childform',
@@ -10,6 +10,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class ChildformComponent implements OnInit {
   @Input() employee !:Employee
   @Input() renderEmployee!:boolean
+  name = '';
 
   ngOnInit(): void {
   }
