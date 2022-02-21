@@ -6,4 +6,10 @@
 - [ ] Forms and HTTPs request
 - [ ] ViewChild
 - [ ] LifeCycle hooks in Angular
+- [ ]    Routing and session management
+- [ ]    Debugging Angular Applications
+- [ ]   Standard Angular Practices:
+- [ ]    State Management with NgRx
+- [ ]  Reactive Programming basics with Rxjs
+ 
 
