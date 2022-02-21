@@ -14,5 +14,9 @@ export class ServiceService {
   getEmployees(): Observable<Employee[]> {
     return this.http.get<Employee[]>(this.url);
   }
- 
+ getEmployeeById(id:number): Observable<Employee>
+ {
+  return this.http.get<Employee>(this.url+id);
+  
+}
 }

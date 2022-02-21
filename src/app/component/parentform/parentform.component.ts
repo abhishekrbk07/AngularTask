@@ -14,6 +14,7 @@ export class ParentformComponent implements OnInit {
   employees!:Employee[]
   index=0;
   employee!:Employee
+  id=1;
 
   renderForm:boolean=false
   renderEmployee!:boolean
@@ -22,6 +23,8 @@ export class ParentformComponent implements OnInit {
 
   ngOnInit(): void {
     this.callEmployees()
+    this.firstRender()
+
   }
   callEmployees(){
     this.employeeService.getEmployees().subscribe((data )=>{
@@ -56,7 +59,7 @@ export class ParentformComponent implements OnInit {
   onAdd(){
   
     this.renderForm=true
-    this.renderEmployee=false
+    this.renderEmployee=true
   }
   
   onSubmit(employee: any) {
@@ -64,5 +67,23 @@ export class ParentformComponent implements OnInit {
     this.employee = employee;
   
   }
+  firstRender(){
 
-}
+    this.renderEmployee= true;
+    
+    this.employeeService.getEmployeeById(this.id).subscribe({
+    
+    next: (data) => {
+    
+    this.employee= data;
+    
+    },
+    
+    error: (e) => console.error(e),
+    
+    });
+    
+    }
+  }
+  
+
