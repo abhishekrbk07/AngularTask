@@ -3,7 +3,7 @@
 - [x] Button Events and Event Emitters
 - [x] Passing Data -> Parent to Child and Child to Parent
 - [x] Observables API calls and services
-- [ ] Forms and HTTPs request
+- [x] Forms and HTTPs request
 - [ ] ViewChild
 - [ ] LifeCycle hooks in Angular
 - [ ]    Routing and session management

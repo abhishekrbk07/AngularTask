@@ -2,7 +2,7 @@
     height: 200px;
     width: 496px;
     border: 2px solid rgb(6, 69, 105);
-    background: rgb(32, 230, 49);
+    background:whitesmoke;
     border-radius: 25px;
   }
   p{
@@ -11,4 +11,6 @@
   }
 h3{
     padding-left: 10px;
+    padding-top: 10px;
+    font-size:small;
 }
