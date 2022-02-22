@@ -13,6 +13,8 @@ import { ChildformComponent } from './component/childform/childform.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { ChildBackendComponent } from './components/child-backend/child-backend.component';
+import { ParentbackendComponent } from './components/parentbackend/parentbackend.component';
 
 
 
@@ -26,6 +28,8 @@ import { FormsModule } from '@angular/forms';
     NewchildComponent,
     ParentformComponent,
     ChildformComponent,
+    ChildBackendComponent,
+    ParentbackendComponent,
   ],
   imports: [
     BrowserModule,HttpClientModule, NgbModule,ReactiveFormsModule,FormsModule

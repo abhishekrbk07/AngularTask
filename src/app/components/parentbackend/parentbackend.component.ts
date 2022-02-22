@@ -3,13 +3,12 @@ import { Employee } from 'src/app/interface/employee';
 import { ServiceService } from 'src/app/services/service.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
-
 @Component({
-  selector: 'app-parentform',
-  templateUrl: './parentform.component.html',
-  styleUrls: ['./parentform.component.css']
+  selector: 'app-parentbackend',
+  templateUrl: './parentbackend.component.html',
+  styleUrls: ['./parentbackend.component.css']
 })
-export class ParentformComponent implements OnInit {
+export class ParentbackendComponent implements OnInit {
 
   employees!:Employee[]
   index=0;
@@ -65,6 +64,19 @@ export class ParentformComponent implements OnInit {
   onSubmit(employee: any) {
     this.renderForm = false;
     this.employee = employee;
+    this.employeeService.postEmployees(employee).subscribe({
+
+      next: (data) => {
+
+        this.employees = data;
+
+        console.log(this.employees);
+
+      },
+
+      error: (e) => console.error(e),
+
+    });
   
   }
   firstCall(){
